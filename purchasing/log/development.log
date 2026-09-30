@@ -1,0 +1,415 @@
+Using vips to process variants requires the libvips library. Please install libvips using the instructions on the libvips website.
+Using vips to process variants requires the libvips library. Please install libvips using the instructions on the libvips website.
+Using vips to process variants requires the libvips library. Please install libvips using the instructions on the libvips website.
+Using vips to process variants requires the libvips library. Please install libvips using the instructions on the libvips website.
+Using vips to process variants requires the libvips library. Please install libvips using the instructions on the libvips website.
+Using vips to process variants requires the libvips library. Please install libvips using the instructions on the libvips website.
+Using vips to process variants requires the libvips library. Please install libvips using the instructions on the libvips website.
+Using vips to process variants requires the libvips library. Please install libvips using the instructions on the libvips website.
+Using vips to process variants requires the libvips library. Please install libvips using the instructions on the libvips website.
+Using vips to process variants requires the libvips library. Please install libvips using the instructions on the libvips website.
+Using vips to process variants requires the libvips library. Please install libvips using the instructions on the libvips website.
+Using vips to process variants requires the libvips library. Please install libvips using the instructions on the libvips website.
+Using vips to process variants requires the libvips library. Please install libvips using the instructions on the libvips website.
+Using vips to process variants requires the libvips library. Please install libvips using the instructions on the libvips website.
+Using vips to process variants requires the libvips library. Please install libvips using the instructions on the libvips website.
+Using vips to process variants requires the libvips library. Please install libvips using the instructions on the libvips website.
+Using vips to process variants requires the libvips library. Please install libvips using the instructions on the libvips website.
+Using vips to process variants requires the libvips library. Please install libvips using the instructions on the libvips website.
+Using vips to process variants requires the libvips library. Please install libvips using the instructions on the libvips website.
+Using vips to process variants requires the libvips library. Please install libvips using the instructions on the libvips website.
+Using vips to process variants requires the libvips library. Please install libvips using the instructions on the libvips website.
+Using vips to process variants requires the libvips library. Please install libvips using the instructions on the libvips website.
+Using vips to process variants requires the libvips library. Please install libvips using the instructions on the libvips website.
+Started GET "/" for 10.89.1.3 at 2026-09-30 17:52:21 +0000
+  [1m[35m (17.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY) /*application='Purchasing'*/[0m
+  [1m[35m (6.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL) /*application='Purchasing'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Purchasing'*/[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate
+
+You have 4 pending migrations:
+
+db/migrate/20260927224653_enable_pgcrypto_extension.rb
+db/migrate/20260929134701_create_gym_members.rb
+db/migrate/20260929202129_create_plans.rb
+db/migrate/20260929203103_create_subscriptions.rb
+
+
+):
+  
+activerecord (8.1.4) lib/active_record/migration.rb:743:in 'ActiveRecord::Migration.check_pending_migrations'
+activerecord (8.1.4) lib/active_record/migration.rb:660:in 'block (2 levels) in ActiveRecord::Migration::CheckPending#call'
+activesupport (8.1.4) lib/active_support/file_update_checker.rb:88:in 'ActiveSupport::FileUpdateChecker#execute'
+activerecord (8.1.4) lib/active_record/migration.rb:665:in 'block in ActiveRecord::Migration::CheckPending#call'
+activerecord (8.1.4) lib/active_record/migration.rb:657:in 'Thread::Mutex#synchronize'
+activerecord (8.1.4) lib/active_record/migration.rb:657:in 'ActiveRecord::Migration::CheckPending#call'
+actionpack (8.1.4) lib/action_dispatch/middleware/callbacks.rb:31:in 'block in ActionDispatch::Callbacks#call'
+activesupport (8.1.4) lib/active_support/callbacks.rb:101:in 'ActiveSupport::Callbacks#run_callbacks'
+actionpack (8.1.4) lib/action_dispatch/middleware/callbacks.rb:30:in 'ActionDispatch::Callbacks#call'
+actionpack (8.1.4) lib/action_dispatch/middleware/executor.rb:20:in 'ActionDispatch::Executor#call'
+actionpack (8.1.4) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in 'ActionDispatch::ActionableExceptions#call'
+actionpack (8.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:31:in 'ActionDispatch::DebugExceptions#call'
+actionpack (8.1.4) lib/action_dispatch/middleware/show_exceptions.rb:32:in 'ActionDispatch::ShowExceptions#call'
+railties (8.1.4) lib/rails/rack/logger.rb:41:in 'Rails::Rack::Logger#call_app'
+railties (8.1.4) lib/rails/rack/logger.rb:29:in 'Rails::Rack::Logger#call'
+actionpack (8.1.4) lib/action_dispatch/middleware/remote_ip.rb:98:in 'ActionDispatch::RemoteIp#call'
+actionpack (8.1.4) lib/action_dispatch/middleware/request_id.rb:34:in 'ActionDispatch::RequestId#call'
+rack (3.2.7) lib/rack/runtime.rb:24:in 'Rack::Runtime#call'
+activesupport (8.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:30:in 'ActiveSupport::Cache::Strategy::LocalCache::Middleware#call'
+actionpack (8.1.4) lib/action_dispatch/middleware/server_timing.rb:61:in 'block in ActionDispatch::ServerTiming#call'
+actionpack (8.1.4) lib/action_dispatch/middleware/server_timing.rb:26:in 'ActionDispatch::ServerTiming::Subscriber#collect_events'
+actionpack (8.1.4) lib/action_dispatch/middleware/server_timing.rb:60:in 'ActionDispatch::ServerTiming#call'
+actionpack (8.1.4) lib/action_dispatch/middleware/executor.rb:20:in 'ActionDispatch::Executor#call'
+actionpack (8.1.4) lib/action_dispatch/middleware/static.rb:27:in 'ActionDispatch::Static#call'
+rack (3.2.7) lib/rack/sendfile.rb:131:in 'Rack::Sendfile#call'
+actionpack (8.1.4) lib/action_dispatch/middleware/host_authorization.rb:144:in 'ActionDispatch::HostAuthorization#call'
+railties (8.1.4) lib/rails/engine.rb:534:in 'Rails::Engine#call'
+puma (8.0.2) lib/puma/configuration.rb:305:in 'Puma::Configuration::ConfigMiddleware#call'
+puma (8.0.2) lib/puma/response.rb:79:in 'block in Puma::Response#handle_request'
+puma (8.0.2) lib/puma/thread_pool.rb:434:in 'Puma::ThreadPool#with_force_shutdown'
+puma (8.0.2) lib/puma/response.rb:78:in 'Puma::Response#handle_request'
+puma (8.0.2) lib/puma/server.rb:508:in 'Puma::Server#process_client'
+puma (8.0.2) lib/puma/server.rb:263:in 'block in Puma::Server#run'
+puma (8.0.2) lib/puma/thread_pool.rb:246:in 'block in Puma::ThreadPool#spawn_thread'
+Started POST "/rails/actions" for 10.89.1.3 at 2026-09-30 17:52:30 +0000
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2082758313941874030) /*application='Purchasing'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Purchasing'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Purchasing'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Create (2.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2026-09-30 17:52:30.272079', '2026-09-30 17:52:30.272084') RETURNING "key" /*application='Purchasing'*/[0m
+Migrating to EnablePgcryptoExtension (20260927224653)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN /*application='Purchasing'*/[0m
+  [1m[35mSQL (19.7ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "pgcrypto" /*application='Purchasing'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20260927224653') RETURNING "version" /*application='Purchasing'*/[0m
+  [1m[36mTRANSACTION (17.4ms)[0m  [1m[35mCOMMIT /*application='Purchasing'*/[0m
+Migrating to CreateGymMembers (20260929134701)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN /*application='Purchasing'*/[0m
+  [1m[35m (5.4ms)[0m  [1m[35mCREATE TABLE "gym_members" ("id" uuid DEFAULT uuidv7() NOT NULL PRIMARY KEY, "name" character varying, "birthdate" date, "gender" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL) /*application='Purchasing'*/[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK /*application='Purchasing'*/[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(2082758313941874030) /*application='Purchasing'*/[0m
+  
+StandardError (An error has occurred, this and all later migrations canceled:
+
+PG::UndefinedFunction: ERROR:  function uuidv7() does not exist
+LINE 1: CREATE TABLE "gym_members" ("id" uuid DEFAULT uuidv7() NOT N...
+                                                      ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+)
+Caused by: ActiveRecord::StatementInvalid (PG::UndefinedFunction: ERROR:  function uuidv7() does not exist
+LINE 1: CREATE TABLE "gym_members" ("id" uuid DEFAULT uuidv7() NOT N...
+                                                      ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+)
+Caused by: PG::UndefinedFunction (ERROR:  function uuidv7() does not exist
+LINE 1: CREATE TABLE "gym_members" ("id" uuid DEFAULT uuidv7() NOT N...
+                                                      ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+)
+
+Information for: StandardError (An error has occurred, this and all later migrations canceled:
+
+PG::UndefinedFunction: ERROR:  function uuidv7() does not exist
+LINE 1: CREATE TABLE "gym_members" ("id" uuid DEFAULT uuidv7() NOT N...
+                                                      ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+):
+  
+
+Information for cause: ActiveRecord::StatementInvalid (PG::UndefinedFunction: ERROR:  function uuidv7() does not exist
+LINE 1: CREATE TABLE "gym_members" ("id" uuid DEFAULT uuidv7() NOT N...
+                                                      ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+):
+  
+
+Information for cause: PG::UndefinedFunction (ERROR:  function uuidv7() does not exist
+LINE 1: CREATE TABLE "gym_members" ("id" uuid DEFAULT uuidv7() NOT N...
+                                                      ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+):
+  
+activerecord (8.1.4) lib/active_record/connection_adapters/postgresql/database_statements.rb:152:in 'PG::Connection#exec'
+activerecord (8.1.4) lib/active_record/connection_adapters/postgresql/database_statements.rb:152:in 'ActiveRecord::ConnectionAdapters::PostgreSQL::DatabaseStatements#perform_query'
+activerecord (8.1.4) lib/active_record/connection_adapters/abstract/database_statements.rb:572:in 'block (2 levels) in ActiveRecord::ConnectionAdapters::DatabaseStatements#raw_execute'
+activerecord (8.1.4) lib/active_record/connection_adapters/abstract_adapter.rb:1091:in 'block in ActiveRecord::ConnectionAdapters::AbstractAdapter#with_raw_connection'
+activesupport (8.1.4) lib/active_support/concurrency/null_lock.rb:9:in 'ActiveSupport::Concurrency::NullLock#synchronize'
+activerecord (8.1.4) lib/active_record/connection_adapters/abstract_adapter.rb:1060:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#with_raw_connection'
+activerecord (8.1.4) lib/active_record/connection_adapters/abstract/database_statements.rb:570:in 'block in ActiveRecord::ConnectionAdapters::DatabaseStatements#raw_execute'
+activesupport (8.1.4) lib/active_support/notifications/instrumenter.rb:58:in 'ActiveSupport::Notifications::Instrumenter#instrument'
+activerecord (8.1.4) lib/active_record/connection_adapters/abstract_adapter.rb:1218:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#log'
+activerecord (8.1.4) lib/active_record/connection_adapters/abstract/database_statements.rb:569:in 'ActiveRecord::ConnectionAdapters::DatabaseStatements#raw_execute'
+activerecord (8.1.4) lib/active_record/connection_adapters/abstract/database_statements.rb:625:in 'ActiveRecord::ConnectionAdapters::DatabaseStatements#internal_execute'
+activerecord (8.1.4) lib/active_record/connection_adapters/abstract/database_statements.rb:140:in 'ActiveRecord::ConnectionAdapters::DatabaseStatements#execute'
+activerecord (8.1.4) lib/active_record/connection_adapters/abstract/query_cache.rb:25:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#execute'
+activerecord (8.1.4) lib/active_record/connection_adapters/abstract/schema_statements.rb:313:in 'ActiveRecord::ConnectionAdapters::SchemaStatements#create_table'
+activerecord (8.1.4) lib/active_record/migration/default_strategy.rb:10:in 'ActiveRecord::Migration::DefaultStrategy#method_missing'
+activerecord (8.1.4) lib/active_record/migration.rb:1061:in 'block in ActiveRecord::Migration#method_missing'
+activerecord (8.1.4) lib/active_record/migration.rb:1027:in 'block in ActiveRecord::Migration#say_with_time'
+activesupport (8.1.4) lib/active_support/benchmark.rb:17:in 'ActiveSupport::Benchmark.realtime'
+activerecord (8.1.4) lib/active_record/migration.rb:1027:in 'ActiveRecord::Migration#say_with_time'
+activerecord (8.1.4) lib/active_record/migration.rb:1050:in 'ActiveRecord::Migration#method_missing'
+activerecord (8.1.4) lib/active_record/migration.rb:582:in 'ActiveRecord::Migration::Current#create_table'
+db/migrate/20260929134701_create_gym_members.rb:3:in 'CreateGymMembers#change'
+activerecord (8.1.4) lib/active_record/migration.rb:996:in 'ActiveRecord::Migration#exec_migration'
+activerecord (8.1.4) lib/active_record/migration.rb:980:in 'block (2 levels) in ActiveRecord::Migration#migrate'
+activesupport (8.1.4) lib/active_support/benchmark.rb:17:in 'ActiveSupport::Benchmark.realtime'
+activerecord (8.1.4) lib/active_record/migration.rb:979:in 'block in ActiveRecord::Migration#migrate'
+activerecord (8.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:459:in 'ActiveRecord::ConnectionAdapters::ConnectionPool#with_connection'
+activerecord (8.1.4) lib/active_record/migration.rb:978:in 'ActiveRecord::Migration#migrate'
+activerecord (8.1.4) lib/active_record/migration.rb:1196:in 'ActiveRecord::MigrationProxy#migrate'
+activerecord (8.1.4) lib/active_record/migration.rb:1545:in 'block in ActiveRecord::Migrator#execute_migration_in_transaction'
+activerecord (8.1.4) lib/active_record/connection_adapters/abstract/transaction.rb:648:in 'block in ActiveRecord::ConnectionAdapters::TransactionManager#within_new_transaction'
+activesupport (8.1.4) lib/active_support/concurrency/null_lock.rb:9:in 'ActiveSupport::Concurrency::NullLock#synchronize'
+activerecord (8.1.4) lib/active_record/connection_adapters/abstract/transaction.rb:645:in 'ActiveRecord::ConnectionAdapters::TransactionManager#within_new_transaction'
+activerecord (8.1.4) lib/active_record/connection_adapters/abstract/database_statements.rb:386:in 'ActiveRecord::ConnectionAdapters::DatabaseStatements#within_new_transaction'
+activerecord (8.1.4) lib/active_record/connection_adapters/abstract/database_statements.rb:378:in 'ActiveRecord::ConnectionAdapters::DatabaseStatements#transaction'
+activerecord (8.1.4) lib/active_record/migration.rb:1596:in 'ActiveRecord::Migrator#ddl_transaction'
+activerecord (8.1.4) lib/active_record/migration.rb:1544:in 'ActiveRecord::Migrator#execute_migration_in_transaction'
+activerecord (8.1.4) lib/active_record/migration.rb:1518:in 'Array#each'
+activerecord (8.1.4) lib/active_record/migration.rb:1518:in 'ActiveRecord::Migrator#migrate_without_lock'
+activerecord (8.1.4) lib/active_record/migration.rb:1463:in 'block in ActiveRecord::Migrator#migrate'
+activerecord (8.1.4) lib/active_record/migration.rb:1616:in 'ActiveRecord::Migrator#with_advisory_lock'
+activerecord (8.1.4) lib/active_record/migration.rb:1463:in 'ActiveRecord::Migrator#migrate'
+activerecord (8.1.4) lib/active_record/migration.rb:1270:in 'ActiveRecord::MigrationContext#up'
+activerecord (8.1.4) lib/active_record/migration.rb:1245:in 'ActiveRecord::MigrationContext#migrate'
+activerecord (8.1.4) lib/active_record/tasks/database_tasks.rb:268:in 'ActiveRecord::Tasks::DatabaseTasks#migrate'
+activerecord (8.1.4) lib/active_record/tasks/database_tasks.rb:246:in 'ActiveRecord::Tasks::DatabaseTasks#migrate_all'
+activerecord (8.1.4) lib/active_record/migration.rb:151:in 'block in <class:PendingMigrationError>'
+activesupport (8.1.4) lib/active_support/actionable_error.rb:30:in 'ActiveSupport::ActionableError.dispatch'
+actionpack (8.1.4) lib/action_dispatch/middleware/actionable_exceptions.rb:20:in 'ActionDispatch::ActionableExceptions#call'
+actionpack (8.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:31:in 'ActionDispatch::DebugExceptions#call'
+actionpack (8.1.4) lib/action_dispatch/middleware/show_exceptions.rb:32:in 'ActionDispatch::ShowExceptions#call'
+railties (8.1.4) lib/rails/rack/logger.rb:41:in 'Rails::Rack::Logger#call_app'
+railties (8.1.4) lib/rails/rack/logger.rb:29:in 'Rails::Rack::Logger#call'
+actionpack (8.1.4) lib/action_dispatch/middleware/remote_ip.rb:98:in 'ActionDispatch::RemoteIp#call'
+actionpack (8.1.4) lib/action_dispatch/middleware/request_id.rb:34:in 'ActionDispatch::RequestId#call'
+rack (3.2.7) lib/rack/runtime.rb:24:in 'Rack::Runtime#call'
+activesupport (8.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:30:in 'ActiveSupport::Cache::Strategy::LocalCache::Middleware#call'
+actionpack (8.1.4) lib/action_dispatch/middleware/server_timing.rb:61:in 'block in ActionDispatch::ServerTiming#call'
+actionpack (8.1.4) lib/action_dispatch/middleware/server_timing.rb:26:in 'ActionDispatch::ServerTiming::Subscriber#collect_events'
+actionpack (8.1.4) lib/action_dispatch/middleware/server_timing.rb:60:in 'ActionDispatch::ServerTiming#call'
+actionpack (8.1.4) lib/action_dispatch/middleware/executor.rb:20:in 'ActionDispatch::Executor#call'
+actionpack (8.1.4) lib/action_dispatch/middleware/static.rb:27:in 'ActionDispatch::Static#call'
+rack (3.2.7) lib/rack/sendfile.rb:131:in 'Rack::Sendfile#call'
+actionpack (8.1.4) lib/action_dispatch/middleware/host_authorization.rb:144:in 'ActionDispatch::HostAuthorization#call'
+railties (8.1.4) lib/rails/engine.rb:534:in 'Rails::Engine#call'
+puma (8.0.2) lib/puma/configuration.rb:305:in 'Puma::Configuration::ConfigMiddleware#call'
+puma (8.0.2) lib/puma/response.rb:79:in 'block in Puma::Response#handle_request'
+puma (8.0.2) lib/puma/thread_pool.rb:434:in 'Puma::ThreadPool#with_force_shutdown'
+puma (8.0.2) lib/puma/response.rb:78:in 'Puma::Response#handle_request'
+puma (8.0.2) lib/puma/server.rb:508:in 'Puma::Server#process_client'
+puma (8.0.2) lib/puma/server.rb:263:in 'block in Puma::Server#run'
+puma (8.0.2) lib/puma/thread_pool.rb:246:in 'block in Puma::ThreadPool#spawn_thread'
+Started GET "/" for 10.89.1.3 at 2026-09-30 19:17:51 +0000
+  [1m[35m (17.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY) /*application='Purchasing'*/[0m
+  [1m[35m (3.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL) /*application='Purchasing'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Purchasing'*/[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate
+
+You have 4 pending migrations:
+
+db/migrate/20260927224653_enable_pgcrypto_extension.rb
+db/migrate/20260929134701_create_gym_members.rb
+db/migrate/20260929202129_create_plans.rb
+db/migrate/20260929203103_create_subscriptions.rb
+
+
+):
+  
+activerecord (8.1.4) lib/active_record/migration.rb:743:in 'ActiveRecord::Migration.check_pending_migrations'
+activerecord (8.1.4) lib/active_record/migration.rb:660:in 'block (2 levels) in ActiveRecord::Migration::CheckPending#call'
+activesupport (8.1.4) lib/active_support/file_update_checker.rb:88:in 'ActiveSupport::FileUpdateChecker#execute'
+activerecord (8.1.4) lib/active_record/migration.rb:665:in 'block in ActiveRecord::Migration::CheckPending#call'
+activerecord (8.1.4) lib/active_record/migration.rb:657:in 'Thread::Mutex#synchronize'
+activerecord (8.1.4) lib/active_record/migration.rb:657:in 'ActiveRecord::Migration::CheckPending#call'
+actionpack (8.1.4) lib/action_dispatch/middleware/callbacks.rb:31:in 'block in ActionDispatch::Callbacks#call'
+activesupport (8.1.4) lib/active_support/callbacks.rb:101:in 'ActiveSupport::Callbacks#run_callbacks'
+actionpack (8.1.4) lib/action_dispatch/middleware/callbacks.rb:30:in 'ActionDispatch::Callbacks#call'
+actionpack (8.1.4) lib/action_dispatch/middleware/executor.rb:20:in 'ActionDispatch::Executor#call'
+actionpack (8.1.4) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in 'ActionDispatch::ActionableExceptions#call'
+actionpack (8.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:31:in 'ActionDispatch::DebugExceptions#call'
+actionpack (8.1.4) lib/action_dispatch/middleware/show_exceptions.rb:32:in 'ActionDispatch::ShowExceptions#call'
+railties (8.1.4) lib/rails/rack/logger.rb:41:in 'Rails::Rack::Logger#call_app'
+railties (8.1.4) lib/rails/rack/logger.rb:29:in 'Rails::Rack::Logger#call'
+actionpack (8.1.4) lib/action_dispatch/middleware/remote_ip.rb:98:in 'ActionDispatch::RemoteIp#call'
+actionpack (8.1.4) lib/action_dispatch/middleware/request_id.rb:34:in 'ActionDispatch::RequestId#call'
+rack (3.2.7) lib/rack/runtime.rb:24:in 'Rack::Runtime#call'
+activesupport (8.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:30:in 'ActiveSupport::Cache::Strategy::LocalCache::Middleware#call'
+actionpack (8.1.4) lib/action_dispatch/middleware/server_timing.rb:61:in 'block in ActionDispatch::ServerTiming#call'
+actionpack (8.1.4) lib/action_dispatch/middleware/server_timing.rb:26:in 'ActionDispatch::ServerTiming::Subscriber#collect_events'
+actionpack (8.1.4) lib/action_dispatch/middleware/server_timing.rb:60:in 'ActionDispatch::ServerTiming#call'
+actionpack (8.1.4) lib/action_dispatch/middleware/executor.rb:20:in 'ActionDispatch::Executor#call'
+actionpack (8.1.4) lib/action_dispatch/middleware/static.rb:27:in 'ActionDispatch::Static#call'
+rack (3.2.7) lib/rack/sendfile.rb:131:in 'Rack::Sendfile#call'
+actionpack (8.1.4) lib/action_dispatch/middleware/host_authorization.rb:144:in 'ActionDispatch::HostAuthorization#call'
+railties (8.1.4) lib/rails/engine.rb:534:in 'Rails::Engine#call'
+puma (8.0.2) lib/puma/configuration.rb:305:in 'Puma::Configuration::ConfigMiddleware#call'
+puma (8.0.2) lib/puma/response.rb:79:in 'block in Puma::Response#handle_request'
+puma (8.0.2) lib/puma/thread_pool.rb:434:in 'Puma::ThreadPool#with_force_shutdown'
+puma (8.0.2) lib/puma/response.rb:78:in 'Puma::Response#handle_request'
+puma (8.0.2) lib/puma/server.rb:508:in 'Puma::Server#process_client'
+puma (8.0.2) lib/puma/server.rb:263:in 'block in Puma::Server#run'
+puma (8.0.2) lib/puma/thread_pool.rb:246:in 'block in Puma::ThreadPool#spawn_thread'
+Started POST "/rails/actions" for 10.89.1.3 at 2026-09-30 19:17:58 +0000
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2082758313941874030) /*application='Purchasing'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Purchasing'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.3ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Purchasing'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Create (3.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2026-09-30 19:17:58.261083', '2026-09-30 19:17:58.261087') RETURNING "key" /*application='Purchasing'*/[0m
+Migrating to EnablePgcryptoExtension (20260927224653)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN /*application='Purchasing'*/[0m
+  [1m[35mSQL (14.4ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "pgcrypto" /*application='Purchasing'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20260927224653') RETURNING "version" /*application='Purchasing'*/[0m
+  [1m[36mTRANSACTION (5.3ms)[0m  [1m[35mCOMMIT /*application='Purchasing'*/[0m
+Migrating to CreateGymMembers (20260929134701)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN /*application='Purchasing'*/[0m
+  [1m[35m (4.5ms)[0m  [1m[35mCREATE TABLE "gym_members" ("id" uuid DEFAULT uuidv7() NOT NULL PRIMARY KEY, "name" character varying, "birthdate" date, "gender" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL) /*application='Purchasing'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20260929134701') RETURNING "version" /*application='Purchasing'*/[0m
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mCOMMIT /*application='Purchasing'*/[0m
+Migrating to CreatePlans (20260929202129)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN /*application='Purchasing'*/[0m
+  [1m[35m (5.7ms)[0m  [1m[35mCREATE TABLE "plans" ("id" bigserial primary key, "name" character varying, "description" text, "price_in_cents" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL) /*application='Purchasing'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20260929202129') RETURNING "version" /*application='Purchasing'*/[0m
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[35mCOMMIT /*application='Purchasing'*/[0m
+Migrating to CreateSubscriptions (20260929203103)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN /*application='Purchasing'*/[0m
+  [1m[35m (5.3ms)[0m  [1m[35mCREATE TABLE "subscriptions" ("id" uuid DEFAULT uuidv7() NOT NULL PRIMARY KEY, "gym_member_id" bigint NOT NULL, "plan_id" bigint NOT NULL, "payment_status" character varying, "starts_at" timestamp(6), "expires_at" timestamp(6), "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_765268b46c"
+FOREIGN KEY ("gym_member_id")
+  REFERENCES "gym_members" ("id")
+, CONSTRAINT "fk_rails_63d3df128b"
+FOREIGN KEY ("plan_id")
+  REFERENCES "plans" ("id")
+) /*application='Purchasing'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK /*application='Purchasing'*/[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(2082758313941874030) /*application='Purchasing'*/[0m
+  
+StandardError (An error has occurred, this and all later migrations canceled:
+
+PG::DatatypeMismatch: ERROR:  foreign key constraint "fk_rails_765268b46c" cannot be implemented
+DETAIL:  Key columns "gym_member_id" of the referencing table and "id" of the referenced table are of incompatible types: bigint and uuid.
+)
+Caused by: ActiveRecord::StatementInvalid (PG::DatatypeMismatch: ERROR:  foreign key constraint "fk_rails_765268b46c" cannot be implemented
+DETAIL:  Key columns "gym_member_id" of the referencing table and "id" of the referenced table are of incompatible types: bigint and uuid.
+)
+Caused by: PG::DatatypeMismatch (ERROR:  foreign key constraint "fk_rails_765268b46c" cannot be implemented
+DETAIL:  Key columns "gym_member_id" of the referencing table and "id" of the referenced table are of incompatible types: bigint and uuid.
+)
+
+Information for: StandardError (An error has occurred, this and all later migrations canceled:
+
+PG::DatatypeMismatch: ERROR:  foreign key constraint "fk_rails_765268b46c" cannot be implemented
+DETAIL:  Key columns "gym_member_id" of the referencing table and "id" of the referenced table are of incompatible types: bigint and uuid.
+):
+  
+
+Information for cause: ActiveRecord::StatementInvalid (PG::DatatypeMismatch: ERROR:  foreign key constraint "fk_rails_765268b46c" cannot be implemented
+DETAIL:  Key columns "gym_member_id" of the referencing table and "id" of the referenced table are of incompatible types: bigint and uuid.
+):
+  
+
+Information for cause: PG::DatatypeMismatch (ERROR:  foreign key constraint "fk_rails_765268b46c" cannot be implemented
+DETAIL:  Key columns "gym_member_id" of the referencing table and "id" of the referenced table are of incompatible types: bigint and uuid.
+):
+  
+activerecord (8.1.4) lib/active_record/connection_adapters/postgresql/database_statements.rb:152:in 'PG::Connection#exec'
+activerecord (8.1.4) lib/active_record/connection_adapters/postgresql/database_statements.rb:152:in 'ActiveRecord::ConnectionAdapters::PostgreSQL::DatabaseStatements#perform_query'
+activerecord (8.1.4) lib/active_record/connection_adapters/abstract/database_statements.rb:572:in 'block (2 levels) in ActiveRecord::ConnectionAdapters::DatabaseStatements#raw_execute'
+activerecord (8.1.4) lib/active_record/connection_adapters/abstract_adapter.rb:1091:in 'block in ActiveRecord::ConnectionAdapters::AbstractAdapter#with_raw_connection'
+activesupport (8.1.4) lib/active_support/concurrency/null_lock.rb:9:in 'ActiveSupport::Concurrency::NullLock#synchronize'
+activerecord (8.1.4) lib/active_record/connection_adapters/abstract_adapter.rb:1060:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#with_raw_connection'
+activerecord (8.1.4) lib/active_record/connection_adapters/abstract/database_statements.rb:570:in 'block in ActiveRecord::ConnectionAdapters::DatabaseStatements#raw_execute'
+activesupport (8.1.4) lib/active_support/notifications/instrumenter.rb:58:in 'ActiveSupport::Notifications::Instrumenter#instrument'
+activerecord (8.1.4) lib/active_record/connection_adapters/abstract_adapter.rb:1218:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#log'
+activerecord (8.1.4) lib/active_record/connection_adapters/abstract/database_statements.rb:569:in 'ActiveRecord::ConnectionAdapters::DatabaseStatements#raw_execute'
+activerecord (8.1.4) lib/active_record/connection_adapters/abstract/database_statements.rb:625:in 'ActiveRecord::ConnectionAdapters::DatabaseStatements#internal_execute'
+activerecord (8.1.4) lib/active_record/connection_adapters/abstract/database_statements.rb:140:in 'ActiveRecord::ConnectionAdapters::DatabaseStatements#execute'
+activerecord (8.1.4) lib/active_record/connection_adapters/abstract/query_cache.rb:25:in 'ActiveRecord::ConnectionAdapters::AbstractAdapter#execute'
+activerecord (8.1.4) lib/active_record/connection_adapters/abstract/schema_statements.rb:313:in 'ActiveRecord::ConnectionAdapters::SchemaStatements#create_table'
+activerecord (8.1.4) lib/active_record/migration/default_strategy.rb:10:in 'ActiveRecord::Migration::DefaultStrategy#method_missing'
+activerecord (8.1.4) lib/active_record/migration.rb:1061:in 'block in ActiveRecord::Migration#method_missing'
+activerecord (8.1.4) lib/active_record/migration.rb:1027:in 'block in ActiveRecord::Migration#say_with_time'
+activesupport (8.1.4) lib/active_support/benchmark.rb:17:in 'ActiveSupport::Benchmark.realtime'
+activerecord (8.1.4) lib/active_record/migration.rb:1027:in 'ActiveRecord::Migration#say_with_time'
+activerecord (8.1.4) lib/active_record/migration.rb:1050:in 'ActiveRecord::Migration#method_missing'
+activerecord (8.1.4) lib/active_record/migration.rb:582:in 'ActiveRecord::Migration::Current#create_table'
+db/migrate/20260929203103_create_subscriptions.rb:3:in 'CreateSubscriptions#change'
+activerecord (8.1.4) lib/active_record/migration.rb:996:in 'ActiveRecord::Migration#exec_migration'
+activerecord (8.1.4) lib/active_record/migration.rb:980:in 'block (2 levels) in ActiveRecord::Migration#migrate'
+activesupport (8.1.4) lib/active_support/benchmark.rb:17:in 'ActiveSupport::Benchmark.realtime'
+activerecord (8.1.4) lib/active_record/migration.rb:979:in 'block in ActiveRecord::Migration#migrate'
+activerecord (8.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:459:in 'ActiveRecord::ConnectionAdapters::ConnectionPool#with_connection'
+activerecord (8.1.4) lib/active_record/migration.rb:978:in 'ActiveRecord::Migration#migrate'
+activerecord (8.1.4) lib/active_record/migration.rb:1196:in 'ActiveRecord::MigrationProxy#migrate'
+activerecord (8.1.4) lib/active_record/migration.rb:1545:in 'block in ActiveRecord::Migrator#execute_migration_in_transaction'
+activerecord (8.1.4) lib/active_record/connection_adapters/abstract/transaction.rb:648:in 'block in ActiveRecord::ConnectionAdapters::TransactionManager#within_new_transaction'
+activesupport (8.1.4) lib/active_support/concurrency/null_lock.rb:9:in 'ActiveSupport::Concurrency::NullLock#synchronize'
+activerecord (8.1.4) lib/active_record/connection_adapters/abstract/transaction.rb:645:in 'ActiveRecord::ConnectionAdapters::TransactionManager#within_new_transaction'
+activerecord (8.1.4) lib/active_record/connection_adapters/abstract/database_statements.rb:386:in 'ActiveRecord::ConnectionAdapters::DatabaseStatements#within_new_transaction'
+activerecord (8.1.4) lib/active_record/connection_adapters/abstract/database_statements.rb:378:in 'ActiveRecord::ConnectionAdapters::DatabaseStatements#transaction'
+activerecord (8.1.4) lib/active_record/migration.rb:1596:in 'ActiveRecord::Migrator#ddl_transaction'
+activerecord (8.1.4) lib/active_record/migration.rb:1544:in 'ActiveRecord::Migrator#execute_migration_in_transaction'
+activerecord (8.1.4) lib/active_record/migration.rb:1518:in 'Array#each'
+activerecord (8.1.4) lib/active_record/migration.rb:1518:in 'ActiveRecord::Migrator#migrate_without_lock'
+activerecord (8.1.4) lib/active_record/migration.rb:1463:in 'block in ActiveRecord::Migrator#migrate'
+activerecord (8.1.4) lib/active_record/migration.rb:1616:in 'ActiveRecord::Migrator#with_advisory_lock'
+activerecord (8.1.4) lib/active_record/migration.rb:1463:in 'ActiveRecord::Migrator#migrate'
+activerecord (8.1.4) lib/active_record/migration.rb:1270:in 'ActiveRecord::MigrationContext#up'
+activerecord (8.1.4) lib/active_record/migration.rb:1245:in 'ActiveRecord::MigrationContext#migrate'
+activerecord (8.1.4) lib/active_record/tasks/database_tasks.rb:268:in 'ActiveRecord::Tasks::DatabaseTasks#migrate'
+activerecord (8.1.4) lib/active_record/tasks/database_tasks.rb:246:in 'ActiveRecord::Tasks::DatabaseTasks#migrate_all'
+activerecord (8.1.4) lib/active_record/migration.rb:151:in 'block in <class:PendingMigrationError>'
+activesupport (8.1.4) lib/active_support/actionable_error.rb:30:in 'ActiveSupport::ActionableError.dispatch'
+actionpack (8.1.4) lib/action_dispatch/middleware/actionable_exceptions.rb:20:in 'ActionDispatch::ActionableExceptions#call'
+actionpack (8.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:31:in 'ActionDispatch::DebugExceptions#call'
+actionpack (8.1.4) lib/action_dispatch/middleware/show_exceptions.rb:32:in 'ActionDispatch::ShowExceptions#call'
+railties (8.1.4) lib/rails/rack/logger.rb:41:in 'Rails::Rack::Logger#call_app'
+railties (8.1.4) lib/rails/rack/logger.rb:29:in 'Rails::Rack::Logger#call'
+actionpack (8.1.4) lib/action_dispatch/middleware/remote_ip.rb:98:in 'ActionDispatch::RemoteIp#call'
+actionpack (8.1.4) lib/action_dispatch/middleware/request_id.rb:34:in 'ActionDispatch::RequestId#call'
+rack (3.2.7) lib/rack/runtime.rb:24:in 'Rack::Runtime#call'
+activesupport (8.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:30:in 'ActiveSupport::Cache::Strategy::LocalCache::Middleware#call'
+actionpack (8.1.4) lib/action_dispatch/middleware/server_timing.rb:61:in 'block in ActionDispatch::ServerTiming#call'
+actionpack (8.1.4) lib/action_dispatch/middleware/server_timing.rb:26:in 'ActionDispatch::ServerTiming::Subscriber#collect_events'
+actionpack (8.1.4) lib/action_dispatch/middleware/server_timing.rb:60:in 'ActionDispatch::ServerTiming#call'
+actionpack (8.1.4) lib/action_dispatch/middleware/executor.rb:20:in 'ActionDispatch::Executor#call'
+actionpack (8.1.4) lib/action_dispatch/middleware/static.rb:27:in 'ActionDispatch::Static#call'
+rack (3.2.7) lib/rack/sendfile.rb:131:in 'Rack::Sendfile#call'
+actionpack (8.1.4) lib/action_dispatch/middleware/host_authorization.rb:144:in 'ActionDispatch::HostAuthorization#call'
+railties (8.1.4) lib/rails/engine.rb:534:in 'Rails::Engine#call'
+puma (8.0.2) lib/puma/configuration.rb:305:in 'Puma::Configuration::ConfigMiddleware#call'
+puma (8.0.2) lib/puma/response.rb:79:in 'block in Puma::Response#handle_request'
+puma (8.0.2) lib/puma/thread_pool.rb:434:in 'Puma::ThreadPool#with_force_shutdown'
+puma (8.0.2) lib/puma/response.rb:78:in 'Puma::Response#handle_request'
+puma (8.0.2) lib/puma/server.rb:508:in 'Puma::Server#process_client'
+puma (8.0.2) lib/puma/server.rb:263:in 'block in Puma::Server#run'
+puma (8.0.2) lib/puma/thread_pool.rb:246:in 'block in Puma::ThreadPool#spawn_thread'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2082758313941874030) /*application='Purchasing'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Purchasing'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.5ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Purchasing'*/[0m
+Migrating to CreateSubscriptions (20260929203103)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN /*application='Purchasing'*/[0m
+  [1m[35m (7.8ms)[0m  [1m[35mCREATE TABLE "subscriptions" ("id" uuid DEFAULT uuidv7() NOT NULL PRIMARY KEY, "gym_member_id" uuid NOT NULL, "plan_id" bigint NOT NULL, "payment_status" character varying, "starts_at" timestamp(6), "expires_at" timestamp(6), "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_765268b46c"
+FOREIGN KEY ("gym_member_id")
+  REFERENCES "gym_members" ("id")
+, CONSTRAINT "fk_rails_63d3df128b"
+FOREIGN KEY ("plan_id")
+  REFERENCES "plans" ("id")
+) /*application='Purchasing'*/[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE INDEX "index_subscriptions_on_gym_member_id" ON "subscriptions" ("gym_member_id") /*application='Purchasing'*/[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE INDEX "index_subscriptions_on_plan_id" ON "subscriptions" ("plan_id") /*application='Purchasing'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20260929203103') RETURNING "version" /*application='Purchasing'*/[0m
+  [1m[36mTRANSACTION (3.4ms)[0m  [1m[35mCOMMIT /*application='Purchasing'*/[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(2082758313941874030) /*application='Purchasing'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Purchasing'*/[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[35mSET search_path TO public /*application='Purchasing'*/[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[35mSET search_path TO "$user", public /*application='Purchasing'*/[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[35mSET search_path TO public /*application='Purchasing'*/[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[35mSET search_path TO "$user", public /*application='Purchasing'*/[0m

@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  gym_member: one
+  plan: one
+  payment_status: MyString
+  starts_at: 2026-09-29 17:31:03
+  expires_at: 2026-09-29 17:31:03
+
+two:
+  gym_member: two
+  plan: two
+  payment_status: MyString
+  starts_at: 2026-09-29 17:31:03
+  expires_at: 2026-09-29 17:31:03
