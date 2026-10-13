@@ -1,11 +1,11 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  name: MyString
-  birthdate: 2026-09-29
-  gender: MyString
+valid:
+  name: Gustavo Henrique Gomes Rodrigues
+  birthdate: 2005-02-22
+  gender: male
 
-two:
-  name: MyString
-  birthdate: 2026-09-29
-  gender: MyString
+invalid:
+  name: gus_t@v0_#4x9!_NULL_000_baby_octopus
+  birthdate: 2026-10-01
+  gender: baby octopus

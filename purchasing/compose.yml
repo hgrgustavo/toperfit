@@ -15,7 +15,7 @@ services:
   web:
     user: root
     build: .
-    command: bash -c "rm -f tmp/pids/server.pid && bin/rails server -b 0.0.0.0"
+    command: bash -c "rm -f tmp/pids/server.pid; bundle install --force --full-index; bundle lock --update; ./bin/rails server -b 0.0.0.0;"
     volumes:
       - .:/rails
       - bundle_cache:/usr/local/bundle
