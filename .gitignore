@@ -1,6 +1,5 @@
-# Created by https://www.toptal.com/developers/gitignore/api/rails,ruby,rubymine,jetbrains,git,linux
-
 ### Git ###
+.git*
 *.orig
 *.BACKUP.*
 *.BASE.*
@@ -48,7 +47,7 @@ pickle-email-*.html
 
 # Segredos e Chaves
 **/config/*
-**/.kamal
+**/.kamal/*
 
 # Variaveis de ambiente
 .env
@@ -94,3 +93,5 @@ yarn-debug.log*
 # Diagramas
 *.drawio
 **/*.drawio
+
+.metadata

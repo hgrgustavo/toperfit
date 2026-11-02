@@ -10,4 +10,10 @@ class GymMemberTest < ActiveSupport::TestCase
       FactoryBot.create(:gym_member, :invalid)
     end
   end
+
+  test "should NOT save Krystina Koelpin Runte V" do
+    assert_raises(ArgumentError) do
+      FactoryBot.create(:gym_member, :krystina)
+    end
+  end
 end

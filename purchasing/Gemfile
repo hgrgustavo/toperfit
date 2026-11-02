@@ -49,4 +49,8 @@ group :development, :test do
   gem "rubocop-rails-omakase", require: false
 end
 
-gem "factory_bot_rails", "~> 6.5", groups: [:development, :test]
+gem "factory_bot_rails", "~> 6.5", groups: [ :development, :test ]
+
+gem "pagy", "~> 43.8" # MINOR version restriction, to avoid breaking changes
+
+gem "faker", "~> 3.8", groups: [:development, :test]

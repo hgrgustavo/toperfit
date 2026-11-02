@@ -7,8 +7,15 @@ class GymMember < ApplicationRecord
 
   composed_of :birthdate,
               class_name: "GymMemberAggregate::Birthdate",
-              converter: ->(date) {
-                date.is_a?(GymMemberAggregate::Birthdate) ? date : GymMemberAggregate::Birthdate.new(date)
+              converter: ->(value) {
+                case value
+                when Date
+                  GymMemberAggregate::Birthdate.new(value)
+                when String
+                  GymMemberAggregate::Birthdate.new(Date.parse(value))
+                else
+                  nil
+                end
               }
 
   composed_of :gender,

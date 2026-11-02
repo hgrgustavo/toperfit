@@ -9,5 +9,11 @@ FactoryBot.define do
       birthdate { Date.new(2026, 10, 1) }
       gender { "baby_octopus" }
     end
+    
+    trait :krystina do
+      name { "Krystina Koelpin Runte V" }
+      birthdate { Date.new(1990, 5, 11) }
+      gender { "female" }
+    end
   end
 end

@@ -7,3 +7,12 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+
+15.times do
+  GymMember.create!(
+    name: %(#{Faker::Name.first_name} #{Faker::Name.middle_name} #{Faker::Name.last_name}),
+    birthdate: Faker::Date.birthday(min_age: 18, max_age: 65),
+    gender: %w[female male].sample
+  )
+end

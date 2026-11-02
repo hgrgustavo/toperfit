@@ -23,7 +23,7 @@ module GymMemberAggregate
     end
 
     def to_s
-      @gender.to_s
+      @gender
     end
   end
 end
