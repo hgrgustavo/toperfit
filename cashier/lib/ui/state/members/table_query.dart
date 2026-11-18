@@ -5,6 +5,7 @@ class TableQuery extends StatelessWidget {
   static const double _INPUT_SIZED_BOX_HEIGHT = 60;
   static const double _BUTTON_SIZED_BOX_HEIGHT = _INPUT_SIZED_BOX_HEIGHT - 12;
 
+	
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -44,7 +45,7 @@ class TableQuery extends StatelessWidget {
                   child: TextField(
                     decoration: InputDecoration(
                       prefixIcon: Icon(Icons.search),
-                      labelText: 'Search',
+                      hintText: 'Search',
                       border: ShapedInputBorder(
                         shape: ContinuousRectangleBorder(),
                       ),
